@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Students Site of the GeekBrains school</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+
+
+                var result = 0
+alert("Let's start!")
+                function AskQuestion(question, answer) {
+                 var userAnswer = prompt (question)            
+                 if(userAnswer == answer) {
+                 alert ("It's true!")           
+                  result++
+                } else {
+                 alert ("It's false!")
+                }
+}
+
+AskQuestion("There are 50 candles were burning in the room, 20 of them were extinguished. How many candles left?", "20")
+AskQuestion("And in the fire does not burn and does not sink in water.", "ice")
+AskQuestion("It stands in the kitchen and produces cold.", "freezer")
+
+
+
+    alert ("You solved " + result + " puzzles!")
+</script>
+
+
+</head>
+<body>
+	<div id="header">
+		<a href="index.html">Main</a><span>/</span>
+		<a href="Deposit.html">Deposit</a><span>/</span>
+                <a href="converter.html">Converter</a><span>/</span> 
+		<a href="Puzzles.html">Puzzles</a><span>/</span>
+                <a href="game.html">Guess the number (multiplayer)</a>
+	</div>
+<div id="content">
+	<h1>Students Site of the GeekBrains school</h1>
+   
+<div id="footer">
+	Copyright (c) 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>
+</div>
+
+</body>
+</html>

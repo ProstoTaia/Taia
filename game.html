@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <meta charset='utf-8'>
+	<title>Students Site of the GeekBrains school</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+ alert("Hello, my friend! This game is playing in 2 persons. One of you have to guess the number.")
+ var answer = parseInt(Math.random() * 100)
+ var playerNum = 1
+
+ while(true){
+  var userAns = prompt ("Player # " + playerNum + " enter the number 0-100, for exit press q")
+ if (userAns == "q") {
+ break
+}
+ userAns = parseInt(userAns)
+ if (userAns > answer) {
+  alert("answer is big")
+ }else if (userAns < answer) {
+  alert("answer is small")
+ }else if (userAns == answer) {
+  alert("answer is true! The winner is # " + playerNum)
+  break
+ } else {
+  alert("enter the number")
+ }
+ if (playerNum == 1) {
+     playerNum = 2
+ } else {
+     playerNum = 1
+ }
+}
+</script>
+
+</head>
+<body>
+	<div id="header">
+		<a href="index.html">Main</a><span>/</span>
+		<a href="Deposit.html">Deposit</a><span>/</span>
+                <a href="converter.html">Converter</a><span>/</span> 
+		<a href="Puzzles.html">Puzzles</a><span>/</span>
+                <a href="game.html">Guess the number (multiplayer)</a>
+	</div>
+<div id="content">
+	<h1>Students Site of the GeekBrains school</h1>
+   
+<div id="footer">
+	Copyright (c) 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>
+</div>
+
+</body>
+</html>
